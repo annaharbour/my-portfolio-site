@@ -4,7 +4,6 @@ import Links from './Links'
 function Nav ({selected, handleSelection}) {
  const [isOpen, setIsOpen] =useState(false)
  const pages = ['About', 'Skills', 'Contact']
-let programmer = {firstName: 'Anna', lastName: 'Harbour'}
 
   return (
     <div>
