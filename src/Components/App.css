@@ -286,6 +286,7 @@ input[name="message"]{
     }
     .hamburger {
         margin-top: 1rem;
+        margin-right: 1rem;
     }
     nav {
         margin: 2rem;
@@ -302,17 +303,17 @@ input[name="message"]{
         align-items: center;
     }
     .contact img {
-        width: 20rem;
+        width: 100%;
         transition: none !important;
         transform: none !important;
     }
     form {
         margin: 1rem 0 1rem 0;   
         padding: 1rem;
-        width: 20rem; 
+        width: 100%; 
     }
     .about {
-        margin: 0 1rem;
+        margin: auto;
         flex-direction: column;
         justify-content: center;
         width: 20rem;
@@ -324,13 +325,14 @@ input[name="message"]{
 
     .about img {
         width: 100%;
-        margin: 1rem;
+        margin: 1rem auto;
+        padding-right: .25rem;
         height: auto;
         transition: none !important;
         transform: none !important;
     }
     .bio {
-        margin: 1rem;
+        margin: 1rem auto;
         width: 100%;
         transition: none !important;
         transform: none !important;
