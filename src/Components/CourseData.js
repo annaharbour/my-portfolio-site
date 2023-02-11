@@ -1,49 +1,42 @@
 export const codecademy = [
     {
         title: "Web Development Foundations",
-        courses: [
-            "Welcome to the Full-Stack Engineering Path",
-            "Fundamentals of HTML",
-            "Fundamentals of CSS",
-            "Developing Websites Locally",
-            "Deploying Websites",
-            "Improved Styling with CSS",
-            "Making a Website Responsive"
-        ],
+        section1: "Full-Stack Engineering Path",
+        section2: "Fundamentals of HTML",
+        section3: "Fundamentals of CSS",
+        section4: "Developing Websites Locally",
+        section5: "Deploying Websites",
+        section6: "Improved Styling with CSS",
+        section7: "Making a Website Responsive",
     },
     {
         title: "Building Interactive Websites",
-        courses: [
-            "JavaScript Syntax, Part I",
-            "JavaScript Syntax, Part II",
-            "Git and GitHub, Part I",
-            "Portfolio Project: JavaScript Syntax",
-            "Building Interactive Websites",
-            "Making a Website Accessible",
-            "Portfolio Project: Personal Portfolio Website"
-        ]
+        section1: "JavaScript Syntax, Part ",
+        section2: "JavaScript Syntax, Part II",
+        section3: "Git and GitHub, Part I",
+        section4: "Portfolio Project: JavaScript Syntax",
+        section5: "Building Interactive Websites",
+        section6: "Making a Website Accessible",
+        section7: "Portfolio Project: Personal Portfolio Website",
     },
     {
         title: "Front-End Development",
-        courses: [
-            "JavaScript Syntax, Part III",
-            "JavaScript Testing",
-            "Async JavaScript and HTTP Requests",
-            "Web Apps",
-            "React, Part I",
-            "React, Part II",
-            "Redux",
-            "Git and GitHub, Part II",
-            "Portfolio Project: Reddit Client"
-        ]
+        section1: "JavaScript Syntax, Part III",
+        section2: "JavaScript Testing",
+        section3: "Async JavaScript and HTTP Requests",
+        section4: "Web Apps",
+        section5: "React, Part I",
+        section6: "React, Part II",
+        section7: "Redux",
+        Section8: "Git and GitHub Part II",
+        section9: "Portfolio Project: Reddit Client"        
     },
     {
         title: "Learn C",
     },
     {
-        title: "Learn Node.js",
+        title: "Learn Node.js"
     }
-
 ]
 
 export const udemy = [
@@ -84,30 +77,26 @@ export const udemy = [
 export const freecodecamp = [
     {
         title: "Responsive Web Design",
-        courses: [
-        "Basic HTML and HTML5",
-        "Basic CSS",
-        "Applied Visual Design",
-        "Applied Accessibility",
-        "Responsive Web Design Principles",
-        "CSS Flexbox",
-        "CSS Grid",
-        "Responsive Web Design Projects",
-        ]
+        section1: "Basic HTML and HTML5",
+        section2: "Basic CSS",
+        section3: "Applied Visual Design",
+        section4: "Applied Accessibility",
+        section5: "Responsive Web Design Principles",
+        section6: "CSS Flexbox",
+        section7: "CSS Grid",
+        Section8: "Responsive Web Design Projects"
     },
     {
         title: "JavaScript Algorithms and Data Structures",
-        courses: [
-            "ES6",
-            "Regular Expressions",
-            "Debugging",
-            "Basic Data Structures",
-            "Basic Algorithm Scripting",
-            "Object Oriented Programming",
-            "Functional Programming",
-            "Intermediate Algorithm Scripting",
-            "JavaScript Algorithms and Data Structure Projects",
-        ]
+        section1: "ES6",
+        section2: "Regular Expressions",
+        section3: "Debugging",
+        section4: "Basic Data Structures",
+        section5: "Basic Algorithm Scripting",
+        section6: "Object Oriented Programming",
+        section7: "Functional Programming",
+        Section8: "Intermediate Algorithm Scripting",
+        section9: "JavaScript Algorithms and Data Structure Projects" 
     },  
 ]
 
@@ -117,7 +106,7 @@ export const books = [
         author: 'Jon Duckett',
     },
     {
-        title: 'JavaScript & JQuery:  interactive front-end web development ',
+        title: 'JavaScript & JQuery:  Interactive Front-end Web Development ',
         author: 'Jon Duckett',
     },
     {

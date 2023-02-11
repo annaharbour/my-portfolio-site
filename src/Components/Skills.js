@@ -19,26 +19,7 @@ function Skills() {
       </div>
       
       <div className='courses'>
-      
-      
-        <div className='platform'>
-          <h2>Books</h2>
-          {books.map((book) => (
-                <div key={book.title} className="book">
-                    <h3>{book.title}</h3>
-                    <h6>{book.author}</h6>
-                </div>
-            ))}
-        </div>
-        <div className='platform'>
-        <h2>Codecademy</h2>
-          {codecademy.map((course) => (
-                <div key={course.title} className="course">
-                    <h3>{course.title}</h3>
-                </div>
-            ))}
-        </div>
-        <div className='platform'>
+      <div className='platform'>
         <h2>Udemy</h2>
           {udemy.map((course) => (
                 <div key={course.title} className="course">
@@ -46,12 +27,47 @@ function Skills() {
                     <h6>{course.instructors}</h6>
                 </div>
               ))}
+        </div> 
+        <div className='platform'>
+        <h2>Codecademy</h2>
+          {codecademy.map((course) => (
+                <div key={course.title} className="course">
+                    <h3>{course.title}</h3>
+                    <h6>{course.section1}</h6>
+                    <h6>{course.section2}</h6>
+                    <h6>{course.section3}</h6>
+                    <h6>{course.section4}</h6>
+                    <h6>{course.section5}</h6>
+                    <h6>{course.section6}</h6>
+                    <h6>{course.section7}</h6>
+                    <h6>{course.section8}</h6>
+                    <h6>{course.section9}</h6>
+                </div>
+            ))}
         </div>
         <div className='platform'>
         <h2>FreeCodeCamp</h2>
           {freecodecamp.map((course) => (
                 <div key={course.title} className="course">
                     <h3>{course.title}</h3>
+                    <h6>{course.section1}</h6>
+                    <h6>{course.section2}</h6>
+                    <h6>{course.section3}</h6>
+                    <h6>{course.section4}</h6>
+                    <h6>{course.section5}</h6>
+                    <h6>{course.section6}</h6>
+                    <h6>{course.section7}</h6>
+                    <h6>{course.section8}</h6>
+                    <h6>{course.section9}</h6>
+                </div>
+            ))}
+        </div>
+        <div className='platform'>
+          <h2>Books</h2>
+          {books.map((book) => (
+                <div key={book.title} className="book">
+                    <h3>{book.title}</h3>
+                    <h6>{book.author}</h6>
                 </div>
             ))}
         </div>

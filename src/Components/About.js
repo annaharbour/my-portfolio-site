@@ -17,9 +17,9 @@ function About() {
           to expand my skills to full-stack web and mobile app development. My
           identity is strongly tied to being the learner, and my tendancy to
           avidly consume books, articles, podcasts, and tutorials is fueled by
-          undeniable curiosity. Despite my intellectual proclivities, I'm also
+          insatiable curiosity. Despite my intellectual proclivities, I'm also
           an extrovert and fitness-junkie who enjoys sand volleyball, yoga,
-          running, and any activity within sight of water, trails, or mountains.{" "}
+          running, and any activity within sight of water, trails, or mountains.
         </p>
       </div>
     </div>

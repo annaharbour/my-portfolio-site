@@ -161,7 +161,7 @@ h3 {
 
 .courses h6 {
   margin: 0.2rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 50;
   letter-spacing: 0.1rem;
 }
@@ -198,7 +198,8 @@ h3 {
 .bio p {
   margin-top: 1rem;
   text-align: left;
-  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  
 }
 
 .bio:hover {
