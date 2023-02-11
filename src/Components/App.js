@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import About from "./About";
 import Contact from "./Contact";
 import Header from './Header'
@@ -11,16 +11,16 @@ function App( ) {
   const [selected, setSelected] = useState("About")
 
 
-  useEffect(() => {
-    const storedSelection = localStorage.getItem('selected');
-    if (storedSelection) {
-      setSelected(storedSelection);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storedSelection = localStorage.getItem('selected');
+  //   if (storedSelection) {
+  //     setSelected(storedSelection);
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    localStorage.setItem('selected', selected);
-  }, [selected]);
+  // useEffect(() => {
+  //   localStorage.setItem('selected', selected);
+  // }, [selected]);
 
 
   const handleSelection= (newSelection) => {    
