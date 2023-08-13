@@ -106,19 +106,23 @@ nav li:hover {
 
 .segment h1 {
   color: #cd9731;
+  
 }
 
 .skill {
   display: inline-block;
   text-align: center;
 
-  margin: 2rem;
+  margin: 1.5rem;
   color: #ec5598;
+  font-size: 2rem;
+}
+.skill h3 {
   font-size: 2rem;
 }
 
 .segment i {
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 /* NOT SEGMENT */
@@ -196,9 +200,9 @@ h3 {
 }
 
 .bio p {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   text-align: left;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   
 }
 
@@ -350,5 +354,50 @@ form button {
   }
   .courses {
     flex-wrap: wrap;
+  }
+}
+
+/* Demo */
+
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on mobile */
+}
+
+.demo-description {
+  color: white;
+  border-radius: 5px;
+  transition: transform 1s ease-in-out;
+  padding: 2rem;
+  background-color: #1e1e1e;
+}
+
+.video-container {
+  padding-bottom: 10px; /* Add spacing between video and text */
+}
+
+.testimonials {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  /* Apply the following styles for screens wider than 768px (tablets and desktops) */
+  .content-container {
+    flex-direction: row; /* Arrange elements side by side */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-container {
+    flex: 1; /* Allow the video container to grow */
+    padding: 5rem; /* Add spacing between video and text */
+    
+  }
+
+  .text-container {
+    flex: 1; /* Allow the text container to grow */
+    margin: 5rem;
   }
 }

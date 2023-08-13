@@ -13,12 +13,10 @@ function About() {
           {"}"}
         </h1>
         <p>
-          Hi, I'm Anna! I'm a front-end software developer with a strong desire
-          to expand my skills to full-stack web and mobile app development. My
-          identity is strongly tied to being the learner, and my tendency to
+          Hi, I'm Anna, a full-stack software developer and lover of learning. My tendency to
           avidly consume books, articles, podcasts, and tutorials is fueled by an 
           insatiable curiosity. Despite my intellectual proclivities, I'm also
-          an extrovert and fitness-junkie who enjoys sand volleyball, yoga,
+          an extrovert and health enthusiast who enjoys sand volleyball, yoga,
           running, and any activity within sight of water, trails, or mountains.
         </p>
       </div>

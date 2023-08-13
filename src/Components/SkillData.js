@@ -39,4 +39,13 @@ export const skills = [
         title: "VS Code",
         icon: "devicon-vscode-plain",
     },
+    {
+        title: "MongoDB",
+        icon: "devicon-mongodb-plain"
+    },
+    {
+        title: "postgreSQL",
+        icon: "devicon-postgresql-plain"
+    },
+    
 ]

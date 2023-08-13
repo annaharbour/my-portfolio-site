@@ -3,7 +3,7 @@ import Links from './Links'
 
 function Nav ({selected, handleSelection}) {
  const [isOpen, setIsOpen] =useState(false)
- const pages = ['About', 'Skills', 'Contact']
+ const pages = ['About', 'Skills', 'Contact', 'Demos']
 
   return (
     <div>

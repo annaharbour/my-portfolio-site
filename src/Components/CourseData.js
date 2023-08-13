@@ -11,13 +11,12 @@ export const codecademy = [
     },
     {
         title: "Building Interactive Websites",
-        section1: "JavaScript Syntax, Part ",
-        section2: "JavaScript Syntax, Part II",
-        section3: "Git and GitHub, Part I",
-        section4: "Portfolio Project: JavaScript Syntax",
-        section5: "Building Interactive Websites",
-        section6: "Making a Website Accessible",
-        section7: "Portfolio Project: Personal Portfolio Website",
+        section1: "JavaScript Syntax, Part I and II",
+        section2: "Git and GitHub, Part I",
+        section3: "Portfolio Project: JavaScript Syntax",
+        section4: "Building Interactive Websites",
+        section5: "Making a Website Accessible",
+        section6: "Portfolio Project: Personal Portfolio Website",
     },
     {
         title: "Front-End Development",
@@ -25,11 +24,38 @@ export const codecademy = [
         section2: "JavaScript Testing",
         section3: "Async JavaScript and HTTP Requests",
         section4: "Web Apps",
-        section5: "React, Part I",
-        section6: "React, Part II",
-        section7: "Redux",
-        Section8: "Git and GitHub Part II",
-        section9: "Portfolio Project: Reddit Client"        
+        section5: "React",
+        section6: "Redux",
+        section7: "Portfolio Project: Reddit Client"        
+    },
+    {
+        title: "Back-End Development",
+        section1: "Build a Back-end with Express.js",
+        section2: "User Authentication & Authorization",
+        section3: "Back-End and Feature Testing",
+        section4: "Database Basics",
+        section5: "Working with Databases",
+        section6: "Designing Relational Databases",
+        section7: "Advanced PostgreSQL",
+        Section8: "API Development with Swagger and OpenAPI"  
+    },
+    {
+        title: "Full-Stack Development",
+        section1: "Connecting Front-End to Back-End",
+        section2: "Deploying Web Applications",
+        section3: "Web Security Fundamentals",
+        section4: "Data Security",
+        section5: "Common Attacks on Web Applications",
+        section6: "Fundamentals of Operating Systems",
+        section7: "DevOps Fundamentals"       
+    },
+    {
+        title: "Data Structures and Algorithms",
+        section1: "Linear Data Structures",
+        section2: "Complex Data Structures",
+        section3: "Algorithms",
+        section4: "Search & Graph Algorithms",
+        section5: "Interview Skills"
     },
     {
         title: "Learn C",
@@ -59,6 +85,14 @@ export const udemy = [
     {
         title: "React Front to Back",
         instructors: "Brad Traversy",
+    },
+    {
+        title: "MERN Stack Front To Back: Full Stack React, Redux, & Node.js",
+        instructors: "Brad Traversy",
+    },
+    {
+        title: "The Complete Developer's Guide to MongoDB",
+        instructors: "Stephen Grider",
     },
     {
         title: "C Programming: Becoming A Pro! Think Like a Programmer! ",
