@@ -64,6 +64,21 @@ class Demos extends Component {
                 <div className='content-container'>
                     <div className='video-container'>
                         <video controls width="100%" height="auto">
+                            <source src="images/puravidademo.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='text-container'>
+                        <div className='demo-description'>
+                            <h2>Travel Blog</h2>
+                            <p>Costa Rica Travel Blog</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='content-container'>
+                    <div className='video-container'>
+                        <video controls width="100%" height="auto">
                             <source src="images/beautyhackerdemo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
