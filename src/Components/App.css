@@ -51,15 +51,15 @@ header h2 {
 /* Navigation */
 
 nav {
-  position: fixed;
+  position: absolute;
   text-align: center;
-  margin: 3em;
+  margin: 3rem;
   top: 1rem;
   border-radius: 15px;
   right: 10rem;
 }
 .hamburger {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   background-color: transparent;
@@ -69,7 +69,7 @@ nav {
   font-size: 2rem;
 }
 .links {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 3rem;
   display: flex;
@@ -99,6 +99,14 @@ nav li {
   font-weight: bold;
 }
 nav li:hover {
+  color: #b267e6;
+}
+
+nav a{
+  color: #d9911a;
+}
+
+nav a:hover{
   color: #b267e6;
 }
 
