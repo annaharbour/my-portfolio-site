@@ -12,10 +12,6 @@ export const skills = [
         icon: "devicon-javascript-plain",
     },
     {
-        title: "TypeScript",
-        icon: "devicon-typescript-plain",
-    },
-    {
         title: "Node.js",
         icon: "devicon-nodejs-plain",
     },
@@ -47,5 +43,9 @@ export const skills = [
         title: "postgreSQL",
         icon: "devicon-postgresql-plain"
     },
+    {
+        title: "umbraco",
+        icon: "fa-brands fa-umbraco"
+    }
     
 ]
