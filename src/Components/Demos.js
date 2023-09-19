@@ -102,7 +102,7 @@ class Demos extends Component {
                         <div className='demo-description'>
                             <h2>
                                 Advent Calendar 
-                                <a className="demo-link" href='https://autumnal-advent-calendar.netlify.app/' target='_blank'>
+                                <a className="demo-link" href='https://autumnal-advent-calendar.netlify.app/' target='_blank' rel="noreferrer">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                                 </h2>
