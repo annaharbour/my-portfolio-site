@@ -390,6 +390,22 @@ form button {
   font-size: 1rem;
 }
 
+.demo-description i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.demo-description i:hover {
+  color: #4caf50;
+
+}
+
+.demo-link {
+  color: white;
+}
+
+
 @media (min-width: 768px) {
   /* Apply the following styles for screens wider than 768px (tablets and desktops) */
   .content-container {

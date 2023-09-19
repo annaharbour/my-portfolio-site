@@ -94,6 +94,26 @@ class Demos extends Component {
                 <div className='content-container'>
                     <div className='video-container'>
                         <video controls width="100%" height="auto">
+                            <source src="images/advent-calendar-demo.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='text-container'>
+                        <div className='demo-description'>
+                            <h2>
+                                Advent Calendar 
+                                <a className="demo-link" href='https://autumnal-advent-calendar.netlify.app/' target='_blank'>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                </h2>
+                            <p>Advent Calendar for months September-December 2023 with fun activities in Charlotte</p>        
+                        </div>
+                    </div>
+                </div>
+
+                <div className='content-container'>
+                    <div className='video-container'>
+                        <video controls width="100%" height="auto">
                             <source src="images/moviedemo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
