@@ -1,38 +1,3 @@
-// import React, { Component } from 'react';
-
-// class Demos extends Component {
-//     render() {
-//         return (
-//             <div className='segment'>
-//                 <h1>Demos</h1>
-//                 <video controls width="640" height="360">
-//         <source src="images/PonyClubDemo.mp4" type="video/mp4" />
-//         Your browser does not support the video tag.
-//       </video>
-//                 <br></br>
-//                 <div className='about'>                   
-//                     <div className='bio'>
-                        
-//                         <h2>Assignment Application</h2>
-//                         <p>Developed for an equestrian club to allow volunteers to sign up to work various positions.
-                        
-//                         <br></br>
-//                         <br></br>
-
-//                         <i className='testimonials'>"This will save our team many hours we have previously had to spend emailing and calling potential volunteers."</i>
-//                         <br></br> 
-//                         - Sandra Wright
-                        
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//         );
-//     }
-// }
-
-// export default Demos;
-
 import React, { Component } from 'react';
 
 class Demos extends Component {
@@ -64,14 +29,19 @@ class Demos extends Component {
                 <div className='content-container'>
                     <div className='video-container'>
                         <video controls width="100%" height="auto">
-                            <source src="images/puravidademo.mp4" type="video/mp4" />
+                            <source src="images/travel-blog-demo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div className='text-container'>
                         <div className='demo-description'>
-                            <h2>Travel Blog</h2>
-                            <p>Costa Rica Travel Blog</p>
+                            <h2>
+                                Advent Calendar 
+                                <a className="demo-link" href='https://annas-adventures.netlify.app/' target='_blank' rel="noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                </h2>
+                            <p>Travel Blog made with React, JS, HTML/CSS</p>        
                         </div>
                     </div>
                 </div>
@@ -86,7 +56,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Beauty Blog</h2>
-                            <p>Navbar, blog, interlinked blog posts, contact form, newsletter form</p>        
+                            <p>Navbar, blog, interlinked blog posts, contact form, newsletter form made with Umbraco, HTML/CSS, C#</p>        
                         </div>
                     </div>
                 </div>
@@ -106,7 +76,7 @@ class Demos extends Component {
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                                 </h2>
-                            <p>Advent Calendar for months September-December 2023 with fun activities in Charlotte</p>        
+                            <p>Advent Calendar made with React/JS/HTML/CSS for months September-December 2023 with fun local activities</p>        
                         </div>
                     </div>
                 </div>
@@ -121,7 +91,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Movie Search</h2>
-                            <p>Search movies</p>        
+                            <p>Search movies using API JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>
@@ -136,7 +106,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>React Flashcards</h2>
-                            <p>Responsive flashcards on react terminology</p>        
+                            <p>Responsive flashcards on react terminology using React/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>
