@@ -42,10 +42,5 @@ export const skills = [
     {
         title: "postgreSQL",
         icon: "devicon-postgresql-plain"
-    },
-    {
-        title: "umbraco",
-        icon: "fa-brands fa-umbraco"
     }
-    
 ]

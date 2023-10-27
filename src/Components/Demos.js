@@ -106,7 +106,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>React Flashcards</h2>
-                            <p>Responsive flashcards on react terminology using React/HTML/CSS</p>        
+                            <p>Responsive flashcards on react terminology using React/JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Youtube Copycat</h2>
-                            <p>Search youtube's API and play videos</p>        
+                            <p>Youtube Copycat using React/JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>   
@@ -136,7 +136,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Reddit Copycat</h2>
-                            <p>Search reddit's API</p>        
+                            <p>Reddit Copycat Using Reddit API, React/JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>  
@@ -166,7 +166,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Welcome to the Internet</h2>
-                            <p>A funky little site about the worldwide web</p>        
+                            <p>Made Using JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>    
@@ -181,7 +181,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Instagram Copycat</h2>
-                            <p>Front-end instagram copycat</p>        
+                            <p>Instagram Copycat Using HTML/CSS</p>        
                         </div>
                     </div>
                 </div>       
@@ -196,7 +196,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Recipe Blog</h2>
-                            <p>Responsive design for a recipe web application</p>        
+                            <p>Made Using HTML/CSS</p>        
                         </div>
                     </div>
                 </div>             
@@ -211,7 +211,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Clock / Dark Mode Demo</h2>
-                            <p>Responsive clock changes to dark mode</p>        
+                            <p>Responsive Clock Using JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>
@@ -226,7 +226,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Sketchpad</h2>
-                            <p>Draw with mouse and increase size of lines.</p>        
+                            <p>Draw with mouse and increase size of lines. Made using JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Color boxes</h2>
-                            <p>Create boxes of random colors as you wave your mouse across the gameboard.</p>        
+                            <p>Create boxes of random colors as you wave your mouse across the gameboard. Made using JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Random Quote Generator</h2>
-                            <p>Search or generate random from an API of quotes</p>        
+                            <p>Search or generate random from an API of quotes. Made using JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>
@@ -273,7 +273,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Image Search</h2>
-                            <p>Search API of images</p>        
+                            <p>Search API of images. Made using React/JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>           
@@ -288,7 +288,7 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Basic Components</h2>
-                            <p>Navbar, accordian dropdown, translator</p>        
+                            <p>Navbar, accordian dropdown, translator. Made using React/JS/HTML/CSS</p>        
                         </div>
                     </div>
                 </div>     
