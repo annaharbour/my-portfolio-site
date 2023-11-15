@@ -1,80 +1,115 @@
-import React from 'react'
-import {skills} from './SkillData'
-import { codecademy } from './CourseData'
-import { udemy } from './CourseData'
-import { freecodecamp } from './CourseData'
-import {books} from './CourseData'
+// import React from 'react'
+// import useToggleState from '../hooks/useToggleState';
+// import {skills} from './SkillData'
+
+
+// import {courses} from './CourseData'
+
+
+// function Skills() {
+//   const [selectedCourse, toggleSelectedCourse] = useToggleState(false);
+
+//   return (
+//     <div>
+//       <div className='segment'>
+//           <h1>Skills</h1>
+//           {skills.map((skill) => (
+//               <div key={skill.title} className="skill">
+//                   <i className={skill.icon}></i>
+//                   <br></br><h3>{skill.title}</h3>
+//               </div>
+//           ))}
+//       </div>
+      
+//       <div className='courses'>
+//         {courses.map((course) => {
+//           return(
+//           <div key={course.platform} className='platform'>
+//             <h2 onClick={() => toggleSelectedCourse(course.platform)}>
+//               {course.platform}
+//             </h2>
+//             {console.log('selectedcourse:', selectedCourse)}
+//             {console.log('course.platform:', course.platform)}
+
+//             {/* {selectedCourse && selectedCourse === course.platform && (
+//               <ul>
+//                 {course.courses.map((subCourse) => (
+//                   <li key={subCourse.title} onClick={() => toggleSelectedCourse(subCourse.title)}>
+//                   {subCourse.title}
+//                   {subCourse.sections && (
+//                     <ul>
+//                       {subCourse.sections.map((section, sectionIndex) => (
+//                         <li key={sectionIndex}>{section}</li>
+//                       ))}
+//                     </ul>
+//                   )}
+//                   </li>
+//                 ))}
+//               </ul>
+//             )} */}
+//           {selectedCourse[course.platform] === course.platform && (
+//               <p>Here's where I'm going to render the courses</p>
+//             )}
+//           </div>
+//           );
+//         })}
+//       </div>
+
+//     </div>
+//   )
+// }
+
+// export default Skills
+import React from 'react';
+import useToggleState from '../hooks/useToggleState';
+import { skills } from './SkillData';
+import { courses } from './CourseData';
 
 function Skills() {
+  const [selectedCourses, toggleSelectedCourse] = useToggleState({});
+
   return (
     <div>
       <div className='segment'>
-          <h1>Skills</h1>
-          {skills.map((skill) => (
-              <div key={skill.title} className="skill">
-                  <i className={skill.icon}></i>
-                  <br></br><h3>{skill.title}</h3>
-              </div>
-          ))}
+        <h1>Skills</h1>
+        {skills.map((skill) => (
+          <div key={skill.title} className="skill">
+            <i className={skill.icon}></i>
+            <br></br><h3>{skill.title}</h3>
+          </div>
+        ))}
       </div>
-      
+
       <div className='courses'>
-      <div className='platform'>
-        <h2>Udemy</h2>
-          {udemy.map((course) => (
-                <div key={course.title} className="course">
-                    <h3>{course.title}</h3>
-                    <h6>{course.instructors}</h6>
-                </div>
-              ))}
-        </div> 
-        <div className='platform'>
-        <h2>Codecademy</h2>
-          {codecademy.map((course) => (
-                <div key={course.title} className="course">
-                    <h3>{course.title}</h3>
-                    <h6>{course.section1}</h6>
-                    <h6>{course.section2}</h6>
-                    <h6>{course.section3}</h6>
-                    <h6>{course.section4}</h6>
-                    <h6>{course.section5}</h6>
-                    <h6>{course.section6}</h6>
-                    <h6>{course.section7}</h6>
-                    <h6>{course.section8}</h6>
-                    <h6>{course.section9}</h6>
-                </div>
-            ))}
-        </div>
-        <div className='platform'>
-        <h2>FreeCodeCamp</h2>
-          {freecodecamp.map((course) => (
-                <div key={course.title} className="course">
-                    <h3>{course.title}</h3>
-                    <h6>{course.section1}</h6>
-                    <h6>{course.section2}</h6>
-                    <h6>{course.section3}</h6>
-                    <h6>{course.section4}</h6>
-                    <h6>{course.section5}</h6>
-                    <h6>{course.section6}</h6>
-                    <h6>{course.section7}</h6>
-                    <h6>{course.section8}</h6>
-                    <h6>{course.section9}</h6>
-                </div>
-            ))}
-        </div>
-        <div className='platform'>
-          <h2>Books</h2>
-          {books.map((book) => (
-                <div key={book.title} className="book">
-                    <h3>{book.title}</h3>
-                    <h6>{book.author}</h6>
-                </div>
-            ))}
-        </div>
+        {courses.map((course) => (
+          <div key={course.platform} className='platform'>
+            <h2 onClick={() => toggleSelectedCourse(course.platform)}>
+              {course.platform}
+            </h2>
+            {console.log('selectedCourses:', selectedCourses)}
+            {console.log('course.platform:', course.platform)}
+
+            {selectedCourses[course.platform] && (
+              <ul>
+                {course.courses.map((subCourse) => (
+                  <li key={subCourse.title} onClick={() => toggleSelectedCourse(subCourse.title)}>
+                    {subCourse.title}
+                    {subCourse.sections && (
+                      <ul>
+                        {subCourse.sections.map((section, sectionIndex) => (
+                          <li key={sectionIndex}>{section}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
       </div>
     </div>
-
-  )
+  );
 }
 
-export default Skills
+export default Skills;
