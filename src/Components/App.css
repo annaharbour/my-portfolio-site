@@ -110,21 +110,26 @@ nav a:hover{
   color: #b267e6;
 }
 
-/* Skills */
+/* Skills and Courses */
 
-.segment h1 {
+.segment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills h1, .resources-and-courses h1 {
   color: #cd9731;
-  
 }
 
 .skill {
   display: inline-block;
   text-align: center;
-
   margin: 1.5rem;
   color: #ec5598;
   font-size: 2rem;
 }
+
 .skill h3 {
   font-size: 2rem;
 }
@@ -133,18 +138,16 @@ nav a:hover{
   font-size: 2rem;
 }
 
-/* NOT SEGMENT */
+.resources-and-courses {
+  background-color: #1e1e1e;
+  padding: 2rem;
+}
 
 .courses {
   width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
   color: white;
-  border-radius: 5px;
-  background-color: #1e1e1e;
   display: flex;
-  justify-content: space-between;
-  /* flex-wrap: wrap; */
+  justify-content: space-around;
 }
 
 .platform h2 {
@@ -166,6 +169,15 @@ h3 {
   text-decoration: underline;
 }
 
+.courses i {
+  color: #ffa500;
+  margin: .2rem;
+}
+
+.courses ul {
+  list-style: none;
+}
+
 .courses h3 {
   font-size: 1rem;
   font-family: "Source Code Pro", monospace;
@@ -177,6 +189,7 @@ h3 {
   font-weight: 50;
   letter-spacing: 0.1rem;
 }
+
 
 /* About */
 
