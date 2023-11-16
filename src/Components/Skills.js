@@ -14,9 +14,13 @@ function Skills() {
         <h1>Skills</h1>
         <div className='segment'>
           {skills.map((skill) => (
-            <div key={skill.title} className="skill">
-              <i className={skill.icon}></i>
-              <br></br><h3>{skill.title}</h3>
+            <div key={skill.title} className="skill" style={{color: `${skill.color}`}}>
+
+              <div className={`${skill.animation && 'spin-animation'}`}>
+                <i className={skill.icon}></i>
+              </div>
+
+              <h3>{skill.title}</h3>
             </div>
           ))}
         </div>

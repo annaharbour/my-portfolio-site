@@ -114,8 +114,9 @@ nav a:hover{
 
 .segment {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .skills h1, .resources-and-courses h1 {
@@ -125,9 +126,23 @@ nav a:hover{
 .skill {
   display: inline-block;
   text-align: center;
-  margin: 1.5rem;
-  color: #ec5598;
+  margin: 2rem;
+  /* color: #ec5598; */
   font-size: 2rem;
+}
+
+.spin-animation {
+  animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .skill h3 {
@@ -155,8 +170,10 @@ nav a:hover{
   margin-top: 2rem;
 }
 
-.platform h6 {
-  color: #ec5598;
+.courses h6 {
+  /* color: #ec5598; */
+  color: #27c3df;
+
 }
 
 .courses h1,
@@ -346,20 +363,21 @@ form button {
     transition: none !important;
     transform: none !important;
   }
+
   .bio {
     margin: 1rem auto;
     width: 100%;
     transition: none !important;
     transform: none !important;
   }
+
   .skill {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column; 
     align-items: center;
+    font-size: .5rem;
+    margin: 1.5rem;
   }
-  .skill i {
-    margin: 1rem;
-  }
+
   .links {
     left: 2rem;
   }
