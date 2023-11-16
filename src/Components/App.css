@@ -378,6 +378,10 @@ form button {
     margin: 1.5rem;
   }
 
+  .skill h3 {
+    font-size: .5rem;
+  }
+
   .links {
     left: 2rem;
   }
