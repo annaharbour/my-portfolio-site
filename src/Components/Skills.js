@@ -54,7 +54,7 @@ function Skills() {
                     {subCourse.sections && selectedSections[subCourse.title] && (
                       <ul>
                         {subCourse.sections.map((section, sectionIndex) => (
-                          <h6><li key={sectionIndex}>{section}</li></h6>
+                          <h6 key={sectionIndex}><li>{section}</li></h6>
                         ))}
                       </ul>
                     )}

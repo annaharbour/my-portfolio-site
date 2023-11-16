@@ -4,7 +4,7 @@ import Links from './Links';
 
 function Nav({ selected, handleSelection }) {
   const [isOpen, setIsOpen] = useState(false);
-  const pages = ['About', 'Skills', 'Contact', 'Demos'];
+  const pages = ['Home', 'Skills', 'Contact', 'Demos'];
 
   return (
     <div>
@@ -12,16 +12,18 @@ function Nav({ selected, handleSelection }) {
       <button
         className="hamburger"
         onClick={() => setIsOpen(!isOpen)}
-        style={{ color: isOpen ? 'grey' : '#B267E6' }}
+        // style={{ color: isOpen ? 'grey' : '#B267E6' }}
+        style={{ display: window.innerWidth <= 650 ? 'block' : 'none' }}
       >
         <i className="fa-solid fa-bars"></i>
       </button>
-      <nav style={{ display: isOpen ? 'block' : 'none' }}>
+      {/* <nav style={{ display: isOpen ? 'block' : 'none' }}> */}
+      <nav style={{ display: window.innerWidth > 650 || isOpen ? 'block' : 'none' }}>
         <ul>
            {pages.map((page) => (
             <li key={page} onClick={() => handleSelection(page)}>
-              {page === 'About' ? (
-                <Link to="/" className={selected === 'About' ? 'selected' : ''}>
+              {page === 'Home' ? (
+                <Link to="/" className={selected === 'Home' ? 'selected' : ''}>
                   {page}
                 </Link>
               ) : (

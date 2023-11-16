@@ -38,7 +38,7 @@ class Demos extends Component {
                             <h2>
                                 Travel Blog 
                                 <a className="demo-link" href='https://annas-adventures.netlify.app/' target='_blank' rel="noreferrer">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                                 </h2>
                             <p>Travel Blog made with React, JS, HTML/CSS</p>        

@@ -51,23 +51,14 @@ header h2 {
 /* Navigation */
 
 nav {
-  position: absolute;
-  text-align: center;
-  margin: 3rem;
-  top: 1rem;
-  border-radius: 15px;
-  right: 10rem;
+  width: 100vw;
+  background-color: #cccccc33;
 }
+
 .hamburger {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  border: none;
-  margin: 3rem;
-  margin-top: 3.5rem;
-  font-size: 2rem;
+  display: none;
 }
+
 .links {
   position: absolute;
   top: 1rem;
@@ -83,20 +74,25 @@ nav {
 .links i:hover {
   color: #d9911a;
 }
+
 nav ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  position: absolute;
-  background-color: #cccccc33;
   padding: 1rem;
-  border: 0.1rem solid #454545;
-  box-shadow: 0.1rem 0.1rem 0.1rem #3a3d41;
-  border-radius: 4px;
-  transition: transform 1s ease-in-out;
+}
+
+nav li.selected a,
+nav a.selected {
+  color: #B267E6;
+  text-decoration: underline;
 }
 nav li {
   border: none;
   padding: 0.5rem;
   font-weight: bold;
+  font-size: 2rem;
 }
 nav li:hover {
   color: #b267e6;
@@ -104,6 +100,7 @@ nav li:hover {
 
 nav a{
   color: #d9911a;
+  text-decoration: none;
 }
 
 nav a:hover{
@@ -127,7 +124,7 @@ nav a:hover{
   display: inline-block;
   text-align: center;
   margin: 2rem;
-  /* color: #ec5598; */
+  color: #ec5598;
   font-size: 2rem;
 }
 
@@ -319,6 +316,7 @@ form button {
   .hamburger {
     margin-top: 1rem;
     margin-right: 1rem;
+    /* display: block; */
   }
   nav {
     margin: 0.5rem;
@@ -326,6 +324,17 @@ form button {
     background-color: #cccccc33;
     z-index: 1;
   }
+ /* .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  margin: 3rem;
+  margin-top: 3.5rem;
+  font-size: 2rem;
+}  */
+
   nav li {
     color: #4caf50;
   }
