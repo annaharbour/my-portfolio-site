@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Demos extends Component {
     render() {
         return (
-            <div className='segment'>
+            <div className='demos'>
                 <h1>Demos</h1>
 
                 <div className='content-container'>
