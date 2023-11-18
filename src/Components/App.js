@@ -18,8 +18,10 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className='header-and-nav'>
       <Nav selected={selected} handleSelection={handleSelection} />
         <Header />
+        </div>
         <main>
           <Routes>
             <Route path="/" element={<About />} />
