@@ -312,57 +312,51 @@ form button {
     text-align: left;
   }
 
-  nav {
-    display: flex; 
-    margin: 0.5rem;
-    position: absolute;
-    top: 3rem;
-    right: -100%; 
-    width: 25%;
-  }
-
-  @keyframes slideIn {
-    from {
-      right: -100%;
-    }
-    to {
-      right: 0;
-    }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    right: -100%;
+    background-color: rgba(0, 0, 0, .9);;
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
+    transition: right 0.3s ease, opacity 0.3s ease, visibility 0.3s ease; /* Use a CSS transition for sliding and fading */
   }
   
-  @keyframes slideOut {
-    from {
-      right: 0;
-    }
-    to {
-      right: -100%;
-    }
+  .nav.open {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
   }
-
-  nav.open {
-    animation: slideIn 0.3s ease;
-    right: 0
-  }
-
-  nav.close {
-    animation: slideOut 0.3s ease;
-    right: -100%;
-  }
-
 
   nav ul {
-    width: 10%;
-    display: flex;
     flex-direction: column; 
     list-style: none;
-    padding: 1rem;
   }
 
   nav li {
     font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  nav a {
+    text-decoration: underline;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+  }
+
+  nav a:active {
+    text-decoration: none;
   }
 
   .hamburger {
+    cursor: pointer;
+    z-index: 2;
     display: block;
     position: absolute;
     top: 1rem;

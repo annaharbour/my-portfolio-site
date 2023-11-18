@@ -73,7 +73,7 @@ class Demos extends Component {
                             <h2>
                                 Advent Calendar 
                                 <a className="demo-link" href='https://autumnal-advent-calendar.netlify.app/' target='_blank' rel="noreferrer">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                                 </h2>
                             <p>Advent Calendar made with React/JS/HTML/CSS for months September-December 2023 with fun local activities</p>        

@@ -1,27 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Links from './Links';
-import { Spin as Hamburger } from 'hamburger-react'
-
+import { Spin as Hamburger } from 'hamburger-react';
 
 function Nav({ selected, handleSelection }) {
   const [isOpen, setOpen] = useState(false);
-
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 650);
-  
+  const isSmallScreen = window.innerWidth <= 650;
   const pages = ['Home', 'Skills', 'Contact', 'Demos'];
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 650);
-    };
+  const toggleNav = () => {
+    setOpen(!isOpen);
+  };
 
-    window.addEventListener('resize', handleResize);
+  const handlePageClick = (page) => {
+    handleSelection(page);
+    setOpen(false); // Close the navigation when a new page is clicked
+  };
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <div>
@@ -30,15 +25,20 @@ function Nav({ selected, handleSelection }) {
         className="hamburger"
         style={{ display: isSmallScreen ? 'block' : 'none' }}
       >
-        <Hamburger className="hamburger" toggled={isOpen} toggle={setOpen} direction="left" color="#b267e6"/>
+        <Hamburger
+          className="hamburger"
+          toggled={isOpen}
+          toggle={toggleNav}
+          direction="left"
+          color="#b267e6"
+        />
       </div>
 
-      <nav className={isOpen ? 'open' : 'close'} style={{display: !isSmallScreen || isOpen ? 'block' : 'none'}}>
-
+      <nav className={`nav ${isOpen ? 'open' : ''}`}>
         <ul>
-           {pages.map((page) => (
-            <li key={page} onClick={() => handleSelection(page)}>
-              {page === 'Home' ? (
+          {pages.map((page) => (
+            <li key={page} onClick={() => handlePageClick(page)}>
+            {page === 'Home' ? (
                 <Link to="/" className={selected === 'Home' ? 'selected' : ''}>
                   {page}
                 </Link>
