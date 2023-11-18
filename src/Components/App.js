@@ -28,7 +28,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/demos" element={<Demos />} />
-            <Route path="/qr" element={<Navigate to="/" />} /> {/* Redirect to the homepage */}
+            <Route path="/qr" element={<Navigate to="/" />} /> 
           </Routes>
         </main>
       </div>

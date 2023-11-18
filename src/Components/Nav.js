@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Links from './Links';
 import { Spin as Hamburger } from 'hamburger-react';
 
 function Nav({ selected, handleSelection }) {
   const [isOpen, setOpen] = useState(false);
-  const isSmallScreen = window.innerWidth <= 650;
-  const pages = ['Home', 'Skills', 'Contact', 'Demos'];
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 650);
+  
+
+  const pages = ['About', 'Skills', 'Contact', 'Demos'];
 
   const toggleNav = () => {
     setOpen(!isOpen);
@@ -14,9 +16,21 @@ function Nav({ selected, handleSelection }) {
 
   const handlePageClick = (page) => {
     handleSelection(page);
-    setOpen(false); // Close the navigation when a new page is clicked
+    setOpen(false); 
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 650);
+      setOpen(false); 
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div>
@@ -38,16 +52,16 @@ function Nav({ selected, handleSelection }) {
         <ul>
           {pages.map((page) => (
             <li key={page} onClick={() => handlePageClick(page)}>
-            {page === 'Home' ? (
-                <Link to="/" className={selected === 'Home' ? 'selected' : ''}>
-                  {page}
+            {page === 'About' ? (
+                <Link to="/" className={selected === 'About' ? 'selected' : ''}>
+                  {page.toUpperCase()}
                 </Link>
               ) : (
                 <Link
                   to={`/${page.toLowerCase()}`}
                   className={selected === page ? 'selected' : ''}
                 >
-                  {page}
+                  {page.toUpperCase()}
                 </Link>
               )}
             </li>

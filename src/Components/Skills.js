@@ -8,7 +8,7 @@ function Skills() {
   const [selectedSections, toggleSection] = useToggleState();
 
   return (
-    <div>
+    <div className='skills-and-coursework'>
 
       <div className='skills'>
         <h1>Skills</h1>
