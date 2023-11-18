@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Links from './Links';
+import useToggleState from '../hooks/useToggleState'
 
 function Nav({ selected, handleSelection }) {
   const [isOpen, setIsOpen] = useState(false);
   const pages = ['Home', 'Skills', 'Contact', 'Demos'];
+  // const [isOpen, setIsOpen] = useToggleState()
 
   return (
     <div>
@@ -12,12 +14,10 @@ function Nav({ selected, handleSelection }) {
       <button
         className="hamburger"
         onClick={() => setIsOpen(!isOpen)}
-        // style={{ color: isOpen ? 'grey' : '#B267E6' }}
         style={{ display: window.innerWidth <= 650 ? 'block' : 'none' }}
       >
         <i className="fa-solid fa-bars"></i>
       </button>
-      {/* <nav style={{ display: isOpen ? 'block' : 'none' }}> */}
       <nav style={{ display: window.innerWidth > 650 || isOpen ? 'block' : 'none' }}>
         <ul>
            {pages.map((page) => (

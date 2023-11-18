@@ -55,26 +55,6 @@ nav {
   background-color: #cccccc33;
 }
 
-.hamburger {
-  display: none;
-}
-
-.links {
-  position: absolute;
-  top: 1rem;
-  right: 3rem;
-  display: flex;
-  flex-direction: row;
-}
-.links i {
-  font-size: 2rem;
-  margin: 0.4rem;
-  color: #b267e6;
-}
-.links i:hover {
-  color: #d9911a;
-}
-
 nav ul {
   width: 30%;
   display: flex;
@@ -105,6 +85,26 @@ nav a{
 
 nav a:hover{
   color: #b267e6;
+}
+
+.hamburger {
+  display: none;
+}
+
+.links {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.links i {
+  font-size: 2rem;
+  margin: 0.4rem;
+  color: #b267e6;
+}
+.links i:hover {
+  color: #d9911a;
 }
 
 /* Skills and Courses */
@@ -231,10 +231,6 @@ h3 {
   
 }
 
-.bio:hover {
-  /* transform: rotate(-5deg); */
-}
-
 /* Form */
 
 .contact {
@@ -304,7 +300,7 @@ form button {
   cursor: pointer;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 650px)  {
   header img {
     display: none;
   }
@@ -313,31 +309,42 @@ form button {
     font-size: 2rem;
     text-align: left;
   }
-  .hamburger {
-    margin-top: 1rem;
-    margin-right: 1rem;
-    /* display: block; */
-  }
+  
   nav {
+    display: flex; 
     margin: 0.5rem;
-    top: 1rem;
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
     background-color: #cccccc33;
     z-index: 1;
+    width: 25%;
   }
- /* .hamburger {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  border: none;
-  margin: 3rem;
-  margin-top: 3.5rem;
-  font-size: 2rem;
-}  */
+
+  nav ul {
+    width: 10%;
+    display: flex;
+    flex-direction: column; 
+    list-style: none;
+    padding: 1rem;
+  }
 
   nav li {
-    color: #4caf50;
+    font-size: 1rem;
   }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #b267e6;
+  }  
+
   .contact {
     display: inline-block;
     margin: 0 1rem;
