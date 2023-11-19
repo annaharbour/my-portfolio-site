@@ -4,8 +4,9 @@ class Demos extends Component {
     render() {
         return (
             <div className='demos'>
+                <div className='page-heading'>
                 <h1>Demos</h1>
-
+                </div>
                 <div className='content-container'>
                     <div className='video-container'>
                         <video controls width="100%" height="auto">

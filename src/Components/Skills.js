@@ -11,7 +11,9 @@ function Skills() {
     <div className='skills-and-coursework'>
 
       <div className='skills'>
-        <h1>Skills</h1>
+        <div className='page-heading'>
+          <h1>Skills</h1>
+        </div>
         <div className='skills-segment'>
           {skills.map((skill) => (
             <div key={skill.title} className="skill" style={{color: `${skill.color}`}}>
@@ -27,7 +29,9 @@ function Skills() {
       </div>
 
       <div className='resources-and-courses'>
-      <h1>Resources and Coursework</h1>
+        <div className='page-heading'>
+          <h1>Resources and Coursework</h1>
+        </div>
         <div className='courses'>
           {courses.map((course) => (
             <div key={course.platform} className='platform'>
