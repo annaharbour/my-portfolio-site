@@ -2,8 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&family=Source+Code+Pro&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto&display=swap');
-
 
 * {
   box-sizing: border-box;
@@ -122,29 +120,27 @@ nav a:hover{
 
 }
 
-.segment {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+.skills-segment {
+  text-align: center;
+  margin: .5rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 skills per row */
+      
 }
 
-.skills h1, .resources-and-courses h1 {
+.skills-and-coursework h1 {
   color: #cd9731;
 }
 
 .skill {
-  display: inline-block;
-  text-align: center;
-  margin: 2rem;
   color: #ec5598;
   font-size: 2rem;
   z-index: -1;
+  margin: 2rem;
 }
 
 .spin-animation {
   animation: spin 2s linear infinite;
-  
 }
 
 
@@ -183,7 +179,6 @@ nav a:hover{
 }
 
 .courses h6 {
-  /* color: #ec5598; */
   color: #27c3df;
 
 }
@@ -426,15 +421,18 @@ form button {
     transform: none !important;
   }
 
+  .skills-segment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .skill {
-    flex-direction: column; 
-    align-items: center;
-    font-size: .5rem;
-    margin: 1.5rem;
+    font-size: 1rem;
+    margin: 1rem
   }
 
   .skill h3 {
-    font-size: .5rem;
+    font-size: 1rem;
   }
 
   .links {
@@ -451,6 +449,10 @@ form button {
   color: #4caf50;
 }
 
+.demos li {
+  margin: 1rem;
+}
+
 .content-container {
   display: flex;
   flex-direction: column; /* Stack elements vertically on mobile */
@@ -464,6 +466,7 @@ form button {
   transition: transform 1s ease-in-out;
   padding: 2rem;
   background-color: #1e1e1e;
+  font-family: "M Plus 1 Code", sans-serif;
 }
 
 .video-container {

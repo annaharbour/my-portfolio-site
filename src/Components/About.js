@@ -1,7 +1,7 @@
 function About() {
   return (
     <div className="about">
-      <img src="/images/desk.JPEG" className="pic" alt="Anna at desk" />
+      <img src="/images/optimized-desk.JPG" className="pic" alt="Anna at desk" />
       <div className="bio">
         <h1>
           <span style={{ color: "#055099" }}>let</span>

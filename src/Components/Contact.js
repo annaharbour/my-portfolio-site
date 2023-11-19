@@ -32,7 +32,7 @@ function Contact() {
 
   return (
     <div className='contact'>
-        <img src='images/redshirt.jpg' alt="Anna at park" className='pic'/>
+        <img src='images/Optimized-redshirt.jpg' alt="Anna at park" className='pic'/>
           <form onSubmit={onSubmit}>
           <h1>Contact</h1>
 

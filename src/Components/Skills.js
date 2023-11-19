@@ -12,7 +12,7 @@ function Skills() {
 
       <div className='skills'>
         <h1>Skills</h1>
-        <div className='segment'>
+        <div className='skills-segment'>
           {skills.map((skill) => (
             <div key={skill.title} className="skill" style={{color: `${skill.color}`}}>
 
