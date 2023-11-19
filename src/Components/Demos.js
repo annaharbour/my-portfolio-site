@@ -29,10 +29,11 @@ class Demos extends Component {
                             </ul>
                             
                             <br /> 
-                                <p className='testimonials'>"This will save our team many hours we have previously had to spend emailing and calling potential volunteers."</p>
-                            
+                                <span className='testimonials'>
+                                    <span className='quote'>"This will save our team many hours we have previously had to spend emailing and calling potential volunteers."</span>
+                                <br/>
                                 - Sandra Wright, Regional Supervisor, United States Pony Club
-                            
+                                </span>                           
                         </div>
                     </div>
                 </div>

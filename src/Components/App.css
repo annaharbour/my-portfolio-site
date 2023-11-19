@@ -38,11 +38,11 @@ h1 {
 header {
   font-family: "M Plus 1 Code", sans-serif; 
   color: #27c3df;
-  margin: 0 0 2rem 0;
   padding: 1rem;
   font-size: 2rem;
   display: flex;
 }
+
 header img {
   margin: 0 2rem;
   border-radius: 50%;
@@ -222,13 +222,14 @@ h3 {
 
 .about {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: auto;
-  padding: 2rem;
+  padding: 3rem;
   justify-content: space-around;
 }
 
 .pic {
+  margin: 0 2rem;
   width: 25rem;
   border-radius: 5px;
   box-shadow: 1rem black;
@@ -249,7 +250,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin: 2rem auto;
+  margin: auto;
 }
 
 .bio-links button {
@@ -292,7 +293,7 @@ span.name-value {
 }
 
 .bio p {
-  margin-top: 1.5rem;
+  margin: 2rem auto 3rem;
   text-align: justify;
   color: white;
   line-height: 2.2rem;
@@ -456,27 +457,24 @@ form button {
   }
 
   .about h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .about img {
     width: 100%;
-    margin: 1rem auto;
+    margin: auto;
     height: auto;
   }
 
   .bio {
-    margin: 1rem auto;
+    margin: auto;
     width: 100%;
-    transition: none !important;
-    transform: none !important;
   }
 
   .bio-links {
     display: grid;
     gap: 2rem;
   }
-
 
   .skills-segment {
     display: grid;
@@ -514,8 +512,15 @@ form button {
   color: #4caf50;
 }
 
+.demos h2 {
+  margin-bottom: 1rem;
+  font-family: "M Plus 1 Code", sans-serif;
+}
+
 .demos li {
   margin: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
 }
 
 .content-container {
@@ -531,16 +536,20 @@ form button {
   transition: transform 1s ease-in-out;
   padding: 2rem;
   background-color: #1e1e1e;
-  font-family: "M Plus 1 Code", sans-serif;
 }
+
+
 
 .video-container {
   padding-bottom: 10px; 
 }
 
 .testimonials {
+  font-size: 1.2rem;
+}
+
+.quote {
   font-style: italic;
-  font-size: 1rem;
 }
 
 .demo-description i {
