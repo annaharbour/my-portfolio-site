@@ -136,7 +136,7 @@ nav a:hover{
   text-align: center;
   margin: .5rem;
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 skills per row */
+  grid-template-columns: repeat(6, 1fr); 
       
 }
 
@@ -179,10 +179,9 @@ nav a:hover{
 }
 
 .courses {
-  width: 100%;
   color: white;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .platform h2 {
@@ -464,6 +463,12 @@ i.demo-link:hover {
     margin: auto;
     width: 100%;
   }
+  .courses {
+    width: 100%;
+    padding:0;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 650px)  {
@@ -580,10 +585,7 @@ i.demo-link:hover {
   .links {
     left: 2rem;
   }
-  .courses {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+  
 
 }
 
