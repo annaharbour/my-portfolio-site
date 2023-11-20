@@ -25,14 +25,14 @@ function About() {
           running, and any activity within sight of water, trails, or mountains.
         </p>
         <div className="bio-links">
-          <button>
+          {/* <button>
             <i className="fa-solid fa-file"></i>   
             Resume
           </button>
           <button>
             <i className="fa-solid fa-file-arrow-down"></i>
                Download Resume
-          </button>
+          </button> */}
           <button>
             <i className="fa-brands fa-github"></i>
                Github
