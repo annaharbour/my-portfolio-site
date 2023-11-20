@@ -33,10 +33,12 @@ function About() {
             <i className="fa-solid fa-file-arrow-down"></i>
                Download Resume
           </button> */}
-          <button>
-            <i className="fa-brands fa-github"></i>
-               Github
-          </button>
+          <a href="https://github.com/AnnaHarbour" target="_blank" rel="noreferrer noopener">
+            <button>
+              <i className="fa-brands fa-github"></i>
+                Github
+            </button>
+          </a>
         </div>
       </div>
     </div>
