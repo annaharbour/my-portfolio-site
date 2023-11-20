@@ -33,9 +33,19 @@ class Demos extends Component {
                                     <span className='quote'>"This will save our team many hours we have previously had to spend emailing and calling potential volunteers."</span>
                                 <br/>
                                 - Sandra Wright, Regional Supervisor, United States Pony Club
-                                </span>                           
+                                </span>  
+                                <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/Profiles-and-Messages" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
                         </div>
+                        
                     </div>
+                    
                 </div>
 
                 <div className='content-container'>
@@ -56,6 +66,41 @@ class Demos extends Component {
                             <p>
                                 One of the key features of this application is the search and filter functionality, allowing users to easily find specific articles of interest using input keywords to locate relevant content. The React Router ensures smooth navigation between different sections of the app, creating a single-page application feel without the need for page reloads.
                             </p>        
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/react-travel-blog" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='content-container'>
+                    <div className='video-container'>
+                        <video controls width="100%" height="auto">
+                            <source src="images/colorpalette.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='text-container'>
+                        <div className='demo-description'>
+                            <h2>
+                                Color Palette 
+                                </h2>
+                            <p>
+                                Key features of this front-end application is the ability to swap hex, rgb, rgba color values in different shades for multiple color themes such as Material UI among a dozen or so others. The user experience is engaging and interactive with signals for successful responses of the use cases.
+                            </p>        
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/color-palettes" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,13 +132,21 @@ class Demos extends Component {
                             <h2>
                                 Advent Calendar 
                                 <a className="demo-link" href='https://autumnal-advent-calendar.netlify.app/' target='_blank' rel="noreferrer">
-                                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <i className="demo-link fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                                 </h2>
                             <p>The calendar is divided into individual cards for each day from September 1st to December 25th. The cards display unique images and fun local activities with a flip animation to reveal the activity. Styles using HTML, CSS, JavaScript, and JSX are applied to create an attractive and responsive design, including animations for card flipping. are implemented using React components to create an engaging and visually appealing experience for users.
-                            </p>        
+                            </p>    
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/autumnal-advent-calendar" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                      </div>
                 </div>
 
                 <div className='content-container'>
@@ -122,6 +175,14 @@ class Demos extends Component {
                         <div className='demo-description'>
                             <h2>React Flashcards</h2>
                             <p>Responsive flashcards designed for learning React terminology, crafted with React, HTML, and CSS. These interactive cards seamlessly adapt to various screen sizes, offering a user-friendly experience on both desktop and mobile devices.</p>        
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/notecards" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,7 +197,15 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Youtube Copycat</h2>
-                            <p>This video player, built with React components and leveraging the Youtube API, supports seamless playback and includes features such as play, pause, volume control, and a progress bar. The sidebar incorporates React-driven functionality for recommended videos. Material UI styling ensures a visually engaging interface, and JavaScript enhances interactivity, providing a smooth and immersive browsing experience reminiscent of the popular video-sharing platform.</p>        
+                            <p>This video player, built with React components and leveraging the Youtube API, supports seamless playback and includes features such as play, pause, volume control, and a progress bar. The sidebar incorporates React-driven functionality for recommended videos. Material UI styling ensures a visually engaging interface, and JavaScript enhances interactivity, providing a smooth and immersive browsing experience reminiscent of the popular video-sharing platform.</p>   
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/youtube-copycat" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>     
                         </div>
                     </div>
                 </div>   
@@ -151,7 +220,15 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Reddit Copycat</h2>
-                            <p>Reddit copycat built with React, JavaScript, HTML, and CSS, leveraging the power of the Reddit API to recreate the iconic discussion platform. </p>        
+                            <p>Reddit copycat built with React, JavaScript, HTML, and CSS, leveraging the power of the Reddit API to recreate the iconic discussion platform. </p>  
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/redditclone" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>      
                         </div>
                     </div>
                 </div>  
@@ -167,7 +244,16 @@ class Demos extends Component {
                         <div className='demo-description'>
                             <h2>Expense Tracker</h2>
                             <p>Efficient expense tracker designed with JavaScript, HTML, and CSS to help users manage their finances seamlessly. The user interface, created with HTML and styled using CSS, provides a clean and intuitive design. Users can input their expenses and income through a simple form, with JavaScript handling the logic behind expense calculations and updating the display in real-time. Each entry is categorized and displayed in a list.</p>        
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/expenses" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>       
 
@@ -181,7 +267,15 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Welcome to the Internet</h2>
-                            <p>Ode to Bo Burnham's song "Welcome to the Internet" Made Using JS/HTML/CSS</p>        
+                            <p>Ode to Bo Burnham's song "Welcome to the Internet" Made Using JS/HTML/CSS</p> 
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/welcome-to-the-internet" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>       
                         </div>
                     </div>
                 </div>    
@@ -196,7 +290,15 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Instagram Copycat</h2>
-                            <p>Instagram copycat user interface crafted with HTML and CSS, replicating the visually appealing design of the popular photo-sharing platform. The layout consists of a responsive grid displaying user posts with square thumbnails</p>        
+                            <p>Instagram copycat user interface crafted with HTML and CSS, replicating the visually appealing design of the popular photo-sharing platform. The layout consists of a responsive grid displaying user posts with square thumbnails</p>    
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/instagramclone" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>    
                         </div>
                     </div>
                 </div>       
@@ -212,6 +314,14 @@ class Demos extends Component {
                         <div className='demo-description'>
                             <h2>Recipe Blog</h2>
                             <p>Vibrant and responsive recipe blog page designed with HTML and CSS. The layout features a visually appealing images, featured ingredients with nutritional benefits, and step-by-step instructions. The use of responsive design ensures an optimal viewing experience across various devices, seamlessly adapting the layout for both desktop and mobile users.</p>        
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/recipe-blog-page" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>             
@@ -288,7 +398,15 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Image Search</h2>
-                            <p>image search application created with React, JavaScript, HTML, and CSS, designed to seamlessly fetch and display results from an image API. The application provides users with a visually intuitive interface where they can input search queries, and the system dynamically fetches and showcases relevant images. The HTML structure lays out a search bar and a responsive grid to display the search results.</p>        
+                            <p>image search application created with React, JavaScript, HTML, and CSS, designed to seamlessly fetch and display results from an image API. The application provides users with a visually intuitive interface where they can input search queries, and the system dynamically fetches and showcases relevant images. The HTML structure lays out a search bar and a responsive grid to display the search results.</p>  
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/pics" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>      
                         </div>
                     </div>
                 </div>           
@@ -303,7 +421,15 @@ class Demos extends Component {
                     <div className='text-container'>
                         <div className='demo-description'>
                             <h2>Basic Components</h2>
-                            <p>This application features a navigation bar, an accordion dropdown, and a translator component made using React, JavaScript, HTML, CSS, and the Google Language API</p>        
+                            <p>This application features a navigation bar, an accordion dropdown, and a translator component made using React, JavaScript, HTML, CSS, and the Google Language API</p>     
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/components" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>   
                         </div>
                     </div>
                 </div>     

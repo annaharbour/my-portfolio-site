@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300&display=swap');
 
-
+/* Universal */
 
 * {
   box-sizing: border-box;
@@ -19,14 +19,17 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.3rem;
-  text-align: justify;
-  
+  text-align: justify; 
 }
 
 h1 {
   text-align: left;
   font-family: "M Plus 1 Code", sans-serif;
 
+}
+
+button {
+  cursor: pointer;
 }
 
 /* Header */
@@ -229,7 +232,7 @@ h3 {
 }
 
 .pic {
-  margin: 0 2rem;
+  margin: 0 auto;
   width: 25rem;
   border-radius: 5px;
   box-shadow: 1rem black;
@@ -302,25 +305,35 @@ span.name-value {
 /* Form */
 
 .contact {
+  width: 100%;
+  padding: 5rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
-form {
-  width: 50rem;
-  height: 30rem;
-  margin: 5rem;
-  padding: 1rem;
-  background-color: #303031;
-  border: 1px solid #303003;
-  border-radius: 10px;
-  display: inline-block;
+.contact-pic {
+  width: 20%;
+  margin: 1rem;
+  height: auto;
 }
 
-form h1 {
+.contact-form {
+  margin: auto;
+  width: 70%;
+  padding: 2rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.email h1 {
+  margin-top: 1rem;
   color: #6a9955;
 }
 
@@ -329,11 +342,11 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 1rem auto;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 1rem;
   background-color: #cccccc;
 }
 
@@ -344,31 +357,114 @@ input:focus {
 }
 
 input[name="message"] {
-  height: 10rem;
-}
-
-input[type="submit"] {
   width: 100%;
-  padding: 1rem;
-  margin: 2rem 0;
-  box-sizing: border-box;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
+  height: 20rem;
 }
 
 form button {
+  background-color: #6A9955;
+  border: none;
+  border-radius: 50px;
   padding: 1rem;
+  width: 15rem;
+  box-shadow: 0 0 1rem 1rem #252526;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif
+}
+
+form button:hover {
+  background-color: #4caf50;
+  box-shadow: 0 0rem 0rem 0rem #252526;
+  transform: translateY(5%);
+}
+
+
+/* Demos */
+
+.page-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.demos h1 {
+  color: #4caf50;
+}
+
+.demos h2 {
+  margin-bottom: 1rem;
+  font-family: "M Plus 1 Code", sans-serif;
+}
+
+.demos li {
+  margin: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 5rem;
+  width: auto;
+}
+
+
+.demo-description {
+  color: white;
   border-radius: 5px;
-  border: solid 1px darkgray;
-  background-color: #d4d4d4;
-  cursor: pointer;
+  transition: transform 1s ease-in-out;
+  padding: 2rem;
+  background-color: #1e1e1e;
+
+}
+
+.demo-description button {
+  margin: 1rem
+}
+
+.video-container {
+  padding-bottom: 10px; 
+}
+
+.testimonials {
+  font-size: 1.2rem;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.demo-description i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+i.demo-link {
+  color: #4caf50;
+
+}
+
+i.demo-link:hover {
+  color: white;
+}
+
+
+@media (max-width: 900px){
+  .contact {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .contact-form, .contact-pic {
+    margin: auto;
+    width: 100%;
+  }
 }
 
 @media (max-width: 650px)  {
+
+ 
   header img {
     display: none;
   }
@@ -435,21 +531,6 @@ form button {
     color: #b267e6;
   }  
 
-  .contact {
-    display: inline-block;
-    margin: 0 1rem;
-    align-items: center;
-  }
-  .contact img {
-    width: 100%;
-    transition: none !important;
-    transform: none !important;
-  }
-  form {
-    margin: 1rem 0 1rem 0;
-    padding: 1rem;
-    width: 100%;
-  }
   .about {
     margin: auto;
     flex-direction: column;
@@ -500,81 +581,14 @@ form button {
 
 }
 
-/* Demos */
-
-.page-heading {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
-.demos h1 {
-  color: #4caf50;
-}
-
-.demos h2 {
-  margin-bottom: 1rem;
-  font-family: "M Plus 1 Code", sans-serif;
-}
-
-.demos li {
-  margin: 1rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1rem;
-}
-
-.content-container {
-  display: flex;
-  flex-direction: column; 
-  margin-bottom: 5rem;
-  width: auto;
-}
-
-.demo-description {
-  color: white;
-  border-radius: 5px;
-  transition: transform 1s ease-in-out;
-  padding: 2rem;
-  background-color: #1e1e1e;
-}
-
-
-
-.video-container {
-  padding-bottom: 10px; 
-}
-
-.testimonials {
-  font-size: 1.2rem;
-}
-
-.quote {
-  font-style: italic;
-}
-
-.demo-description i {
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  color: white;
-}
-
-.demo-description i:hover {
-  color: #4caf50;
-
-}
-
-.demo-link {
-  color: white;
-}
-
-
 @media (min-width: 768px) {
-  .content-container {
-    flex-direction: row; 
-    align-items: center;
-    justify-content: center;
-  }
-  
+    .content-container {
+      flex-direction: row; 
+      align-items: center;
+      justify-content: center;
+    }
+    
+
   .video-container {
     flex: 1; 
     padding: 5rem;

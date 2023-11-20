@@ -31,10 +31,16 @@ function Contact() {
   };
 
   return (
-    <div className='contact'>
-        <img src='images/Optimized-redshirt.jpg' alt="Anna at park" className='pic'/>
-          <form onSubmit={onSubmit}>
+    <div>
+    <div className='email page-heading'>
           <h1>Contact</h1>
+        </div>
+    <div className='contact'>
+        
+        <img src='images/Optimized-redshirt.jpg' alt="Anna at park" className='contact-pic'/>
+        <div className="contact-form">
+          <form onSubmit={onSubmit}>
+          
 
             <input
               type='text'
@@ -44,6 +50,14 @@ function Contact() {
               onChange={handleChange}
             />
            
+           <input
+              type='text'
+              name='reply_to'
+              placeholder='Your email'
+              value={toSend.reply_to}
+              onChange={handleChange}
+            />
+
             <input
               type='text'
               name='message'
@@ -51,15 +65,11 @@ function Contact() {
               value={toSend.message}
               onChange={handleChange}
             />
-            <input
-              type='text'
-              name='reply_to'
-              placeholder='Your email'
-              value={toSend.reply_to}
-              onChange={handleChange}
-            />
+            
             <button type='submit'>Submit</button>
         </form>
+        </div>
+    </div>
     </div>
   )
 }
