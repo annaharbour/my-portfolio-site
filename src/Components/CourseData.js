@@ -38,6 +38,23 @@ export const courses = [
                 ]
             },
             {
+                title: "Learn Advanced React",
+                sections: [
+                    "Learn Advanced React",
+                    "Custom Hooks", 
+                    "Context",
+                    "Error Boundaries",
+                    "Optimization"
+                ]
+            },
+            {
+                title: "Learn React Testing",
+                sections: [
+                    "Jest",
+                    "React Testing Library"
+                ]
+            },
+            {
                 title: "Back-End Development",
                 sections: [
                     "Build a Back-end with Express.js",
@@ -73,6 +90,27 @@ export const courses = [
                 ]
             },
             {
+                title: "Build Web Apps with C# and ASP.NET",
+                sections: [
+                    "Hello World",
+                    "Data Types and Variables",
+                    "Logic and Conditionals",
+                    "Methods",
+                    "Arrays and Loops",
+                    "Classes and Objects",
+                    "Interfaces and Inheritance",
+                    "References",
+                    "Lists and LINQ",
+                    "Web Architecture",
+                    "Make Your First ASP.NET App",
+                    "Razor Syntax",
+                    "Page Models",
+                    "Databases",
+                    "Middleware",
+                    "Dependency Injection"
+                ]
+            },
+            {
                 title: "Learn C",
             },
             {
@@ -98,6 +136,10 @@ export const courses = [
             {
                 title: "Modern React with Redux ",
                 instructors: "Stephen Grider"
+            },
+            {
+                title: "Modern React Bootcamp(Hooks, Context, NextJS, Router)",
+                instructors: "Colt Steele"
             },
             {
                 title: "React Front to Back",
