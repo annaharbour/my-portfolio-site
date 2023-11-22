@@ -108,6 +108,79 @@ class Demos extends Component {
                 <div className='content-container'>
                     <div className='video-container'>
                         <video controls width="100%" height="auto">
+                            <source src="images/spooky-slot-machine.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='text-container'>
+                        <div className='demo-description'>
+                            <h2>
+                                Spooky Slot Machine     
+                            </h2>
+                            <p>
+                                In this full-stack game, players engage with a dynamic UI which renders random emoji results with every round.The player accumulates points when they get 2/3 emojis that are the same and loses a points when they receive all different emojis. When the player runs out of points, the game restarts. The jackpot increases until a user wins it by getting three emojis of the same type. This logic is handled on the frontend with JavaScript and React, backend with Node and Express, and the results are tracked in the database on MongoDB.
+                            </p>        
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/slot-machine" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='content-container'>
+                    <div className='video-container'>
+                        <video controls width="100%" height="auto">
+                            <source src="images/to-do-list.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='text-container'>
+                        <div className='demo-description'>
+                            <h2>
+                                To-Do List 
+                                </h2>
+                            <p>
+                                This fully responsive and aesthetically-pleasing to-do web application allows users to create, view, save, update, and and delete their tasks using CRUD actions, a React and JavaScript front-end, a MongoDB database, and a Node and Express backend.
+                            </p>        
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/to-do-list" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='content-container'>
+                    <div className='video-container'>
+                        <video controls width="100%" height="auto">
+                            <source src="images/card-dealer.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='text-container'>
+                        <div className='demo-description'>
+                            <h2>
+                                Card Dealer
+                            </h2>
+                            <p>
+                                This card dealer frontend made with JavaScript and React makes calls to a deck of cards API that generates a fresh deck and deals them out, rotating each card so the UI portrays a disarrayed stack. Intentions are to use this within a full-stack card game.
+                            </p>        
+                        </div>
+                    </div>
+                </div>
+
+                <div className='content-container'>
+                    <div className='video-container'>
+                        <video controls width="100%" height="auto">
                             <source src="images/beautyhackerdemo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
