@@ -51,6 +51,33 @@ class Demos extends Component {
                 <div className='content-container'>
                     <div className='video-container'>
                         <video controls width="100%" height="auto">
+                            <source src="images/codeshop.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='text-container'>
+                        <div className='demo-description'>
+                            <h2>
+                                MERN E-Commerce Site     
+                            </h2>
+                            <p>
+                              This full-stack e-commerce site uses a MongoDB database, Express and Node.js backend, and React (utilizing the react-bootstrap library paired with custom JSX and CSS) and Redux toolkit for state-management and rendering on the front-end. Key features include serving and fetching data, pagination, search functionality for products, shopping cart functionality, authentication on the frontend and backend, checkout with paypal, admin actions (on orders, users, and products), and customer reviews.
+                            </p>        
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/mern-ecommerce" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='content-container'>
+                    <div className='video-container'>
+                        <video controls width="100%" height="auto">
                             <source src="images/travel-blog-demo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
@@ -155,25 +182,6 @@ class Demos extends Component {
                                     </button>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='content-container'>
-                    <div className='video-container'>
-                        <video controls width="100%" height="auto">
-                            <source src="images/card-dealer.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div className='text-container'>
-                        <div className='demo-description'>
-                            <h2>
-                                Card Dealer
-                            </h2>
-                            <p>
-                                This card dealer frontend made with JavaScript and React makes calls to a deck of cards API that generates a fresh deck and deals them out, rotating each card so the UI portrays a disarrayed stack. Intentions are to use this within a full-stack card game.
-                            </p>        
                         </div>
                     </div>
                 </div>
@@ -397,7 +405,26 @@ class Demos extends Component {
                             </div>
                         </div>
                     </div>
-                </div>             
+                </div>       
+
+                 <div className='content-container'>
+                    <div className='video-container'>
+                        <video controls width="100%" height="auto">
+                            <source src="images/card-dealer.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='text-container'>
+                        <div className='demo-description'>
+                            <h2>
+                                Card Dealer
+                            </h2>
+                            <p>
+                                This card dealer frontend made with JavaScript and React makes calls to a deck of cards API that generates a fresh deck and deals them out, rotating each card so the UI portrays a disarrayed stack. Intentions are to use this within a full-stack card game.
+                            </p>        
+                        </div>
+                    </div>
+                </div>      
 
                 <div className='content-container'>
                     <div className='video-container'>
