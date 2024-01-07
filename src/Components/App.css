@@ -469,6 +469,10 @@ i.demo-link:hover {
     margin: auto;
     grid-template-columns: 1fr;
   }
+
+  p {
+    text-align: left;
+  }
 }
 
 @media (max-width: 650px)  {
