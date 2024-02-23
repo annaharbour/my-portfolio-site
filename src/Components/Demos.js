@@ -212,9 +212,9 @@ class Demos extends Component {
                         <div className='demo-description'>
                             <h2>
                                 Advent Calendar 
-                                <a className="demo-link" href='https://autumnal-advent-calendar.netlify.app/' target='_blank' rel="noreferrer">
+                                {/* <a className="demo-link" href='https://autumnal-advent-calendar.netlify.app/' target='_blank' rel="noreferrer">
                                     <i className="demo-link fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
+                                </a> */}
                                 </h2>
                             <p>The calendar is divided into individual cards for each day from September 1st to December 25th. The cards display unique images and fun local activities with a flip animation to reveal the activity. Styles using HTML, CSS, JavaScript, and JSX are applied to create an attractive and responsive design, including animations for card flipping. are implemented using React components to create an engaging and visually appealing experience for users.
                             </p>    
