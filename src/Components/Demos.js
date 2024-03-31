@@ -45,7 +45,33 @@ class Demos extends Component {
                         </div>
                         
                     </div>
-                    
+                </div>
+
+                <div className='content-container'>
+                    <div className='video-container'>
+                        <video controls width="100%" height="auto">
+                            <source src="images/yoga-studio-ecomm.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='text-container'>
+                        <div className='demo-description'>
+                            <h2>
+                                Yoga Studio E-Commerce Site     
+                            </h2>
+                            <p>
+                              This full-stack e-commerce site uses a MongoDB database, Express and Node.js backend, and React and Redux toolkit for state-management and rendering on the front-end. Key features include authentication on the frontend and backend, a fully functional schedule which fetches and serves yoga classes from the database with options to filter by class type and selected day, and checkout with stripe.
+                            </p>        
+                            <div className='bio-links'>
+                                <a href="https://github.com/annaharbour/yoga-studio-commerce" target='_blank' rel="noreferrer">
+                                    <button>
+                                        <i className="fa-brands fa-github"></i>
+                                        Github Repository
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className='content-container'>
@@ -407,7 +433,7 @@ class Demos extends Component {
                     </div>
                 </div>       
 
-                 <div className='content-container'>
+                 {/* <div className='content-container'>
                     <div className='video-container'>
                         <video controls width="100%" height="auto">
                             <source src="images/card-dealer.mp4" type="video/mp4" />
@@ -532,7 +558,7 @@ class Demos extends Component {
                             </div>   
                         </div>
                     </div>
-                </div>     
+                </div>      */}
                
 
             </div>
