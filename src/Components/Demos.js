@@ -17,15 +17,15 @@ class Demos extends Component {
 					</div>
 					<div className="text-container">
 						<div className="demo-description">
-							<h2>Siren Smoothies: Smoothie Nutrition Application</h2>
+							<h2>Recipe & Nutrition Application</h2>
 							<p>
-								I built Siren Smoothies—an app that helps users find or create
+								An app that helps users find or create
 								smoothie recipes targeting specific macronutrient goals, with
 								accurate nutrition calculations. After creating an account,
 								users can save, rate, comment on, create, and use a variety of criteria to search for recipes.
 								<ul>
 									<li>
-										Developed using MongoDB, Express, React, and Node.js to
+										Web application developed using MongoDB, Express, React, and Node.js to
 										handle both the frontend and backend for a responsive user
 										experience.
 									</li>
@@ -55,11 +55,12 @@ class Demos extends Component {
 							</p>
 							<div className="bio-links">
 								<a
-									href="https://github.com/annaharbour/yoga-studio-commerce"
+									href="https://github.com/annaharbour/nutritious-recipe-app"
 									target="_blank"
 									rel="noreferrer">
 									<button>
-										Visit Site
+										<i className="fa-brands fa-github"></i>
+										Github Repository
 									</button>
 								</a>
 							</div>
